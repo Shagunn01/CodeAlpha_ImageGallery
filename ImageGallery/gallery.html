@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="gallery.css" />
+</head>
+<body>
+  <h1 class="gallery-title">Image Gallery</h1>
+
+  <div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+    <button onclick="filterImages('animals')">Animals</button>
+  </div>
+
+  <div class="gallery">
+    <div class="image-box nature"><img src="./nature1.jpg" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box city"><img src="./city1.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box animals"><img src="./animal1.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box city"><img src="./city2.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box nature"><img src="./nature2.jpeg" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box animals"><img src="./animal2.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box animals"><img src="./animal3.jpg" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box city"><img src="./city3.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box nature"><img src="./nature3.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box nature"><img src="./nature4.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box animals"><img src="./animal4.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box city"><img src="./city4.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box city"><img src="./city5.jpeg" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box nature"><img src="./nature5.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box animals"><img src="./animal5.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box animals"><img src="./animal6.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box city"><img src="./city6.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box nature"><img src="./nature6.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box city"><img src="./city7.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box animals"><img src="./animal7.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box nature"><img src="./nature7.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box nature"><img src="./nature8.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box city"><img src="./city8.avif" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box animals"><img src="./animal8.jpg" onclick="openLightbox(this.src)" /></div>
+     <div class="image-box animals"><img src="./animal9.avif" onclick="openLightbox(this.src)" /></div>
+     <div class="image-box nature"><img src="./nature9.jpg" onclick="openLightbox(this.src)" /></div>
+    <div class="image-box city"><img src="./city9.avif" onclick="openLightbox(this.src)" /></div>
+
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <span id="closeBtn">&times;</span>
+    <img id="lightbox-img" />
+    <button id="prevBtn" onclick="prevImage(event)">❮</button>
+    <button id="nextBtn" onclick="nextImage(event)">❯</button>
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
